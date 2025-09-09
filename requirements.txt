@@ -1,0 +1,8 @@
+django
+djangorestframework
+tensorflow
+pillow
+matplotlib
+scikit-learn
+numpy
+pandas
