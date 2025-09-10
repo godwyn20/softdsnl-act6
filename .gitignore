@@ -25,6 +25,7 @@ Thumbs.db
 # Datasets (too large for GitHub, store locally)
 data/
 
+
 # Models (optional: if too large, use Git LFS instead)
 *.h5
 *.hdf5
