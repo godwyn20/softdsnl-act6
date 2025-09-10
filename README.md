@@ -17,22 +17,18 @@ By completing this project, you will:
 
 ---
 
-## 📂 Deliverables
-Each student must submit:
+## File Structure
 
-1. ✅ A **PDF report** named `SOFTDSNL_Activity6_Surnames.pdf` that includes:
-   - Screenshots of model training results (accuracy/loss curves).
-   - Screenshots of **10 Postman test cases** (1 image per category).
-   - A **link to your GitHub repository fork** containing your code.
-
-2. ✅ A **GitHub repository** with:
-   - Training script (Jupyter notebook or `.py`).
-   - Trained model file (`.h5`).
-   - Django project with an endpoint for predictions.
-   - README with setup instructions.
-
----
-
+```
+softdsnl-act6
+│── requirements.txt
+│── README.md
+│── train_model.py
+│── test_model.py
+│── data/  # extracted dataset from Kaggle (In this repo, I use this link (https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset). Thanks Sachin!)      
+│── my_test_images/    # your own test images for predictions (This is for postman)
+│── ml_api_project/    # Django project folder
+```
 ## 📝 Instructions
 
 ### 1. Choose a Kaggle Dataset
@@ -55,8 +51,9 @@ Each student must submit:
 ### 3. Build and Train a CNN
 - Use TensorFlow/Keras to define a CNN model.
 - Compile, train, and evaluate the model.
-- Save your trained model as `.h5`.
 
+```
+Check train_model.py for the code.
 ---
 
 ### 4. Deploy with Django
@@ -70,36 +67,7 @@ Each student must submit:
 ---
 
 ### 5. Test with Postman
-- Send **10 test requests** (one per category in your dataset).
+- Send **10 test requests** (one per category in your dataset) (Use the images from my_test_images folder.)
 - Take screenshots of successful predictions.
 
 ---
-
-## 📊 Grading Criteria
-
-| Criteria | Points |
-|----------|---------|
-| **PDF Report** | 30 |
-| - Training results screenshots | 10 |
-| - Postman test screenshots (10) | 10 |
-| - GitHub link included | 10 |
-| **Model Training** | 25 |
-| - Correct dataset preprocessing | 10 |
-| - CNN model architecture | 10 |
-| - Accuracy/loss explanation | 5 |
-| **Django Integration** | 25 |
-| - Working endpoint for predictions | 15 |
-| - Correct preprocessing in API | 10 |
-| **Code Quality & Repo** | 20 |
-| - Organized, readable code | 10 |
-| - Clear README instructions | 10 |
-
-**Total: 100 points**
-
----
-
-## 🚀 Submission
-- Upload your PDF report to the LMS.
-- Include your GitHub repo link inside the PDF.
-- Ensure your repo is public or shared with the instructor.
-
